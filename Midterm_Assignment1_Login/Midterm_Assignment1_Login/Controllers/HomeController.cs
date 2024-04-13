@@ -30,10 +30,11 @@ namespace Midterm_Assignment1_Login.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add()
+
+        /*public IActionResult Login()
         {
             return View();
-        }
+        }*/
 
     }
 }
