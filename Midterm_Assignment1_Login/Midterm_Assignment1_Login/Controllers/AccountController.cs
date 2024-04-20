@@ -1,68 +1,36 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Login.Application;
+using Microsoft.AspNetCore.Mvc;
 using Midterm_Assignment1_Login.Services;
 
 namespace Midterm_Assignment1_Login.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly IAuthService _authService;
+        private readonly UserService _userService;
 
-        public AccountController(IAuthService authService)
+        public AccountController(UserService userService)
         {
-            _authService = authService;
+            _userService = userService;
         }
 
-        [HttpGet]
-        public ActionResult Register()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Register(Models.RegisterViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            bool success = _authService.RegisterUser(model.Username, model.Password, model.Email);
-            if (success)
-            {
-                // Redirect to login page or show confirmation message
-                return RedirectToAction("Login");
-            }
-            else
-            {
-                ModelState.AddModelError("", "Username already exists.");
-                return View(model);
-            }
-        }
-
-        [HttpGet]
         public ActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Login(Models.LoginViewModel model)
+        public ActionResult Login(string username, string password)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            bool success = _authService.Login(model.Username, model.Password, out Domain.User user);
-            if (success)
+            var user = _userService.Login(username, password);
+            if (user != null)
             {
                 // Redirect to dashboard or home page
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                ModelState.AddModelError("", "Invalid username or password.");
-                return View(model);
+                ViewBag.ErrorMessage = "Invalid username or password";
+                return View();
             }
         }
     }
