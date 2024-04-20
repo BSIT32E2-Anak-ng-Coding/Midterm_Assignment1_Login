@@ -1,24 +1,84 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Begey\\Desktop\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj": {}
+    "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Begey\\Desktop\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj": {
+    "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\Login.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Begey\\Desktop\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj",
-        "projectName": "Midterm_Assignment1_Login",
-        "projectPath": "C:\\Users\\Begey\\Desktop\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj",
-        "packagesPath": "C:\\Users\\Begey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Begey\\Desktop\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\obj\\",
+        "projectUniqueName": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\Login.Application.csproj",
+        "projectName": "Login.Application",
+        "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\Login.Application.csproj",
+        "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Begey\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\Login.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\Login.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\Login.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\Login.Domain.csproj",
+        "projectName": "Login.Domain",
+        "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\Login.Domain.csproj",
+        "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,6 +92,134 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\Login.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\Login.Infrastructure.csproj",
+        "projectName": "Login.Infrastructure",
+        "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\Login.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\Login.Domain.csproj": {
+                "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Domain\\Login.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj",
+        "projectName": "Midterm_Assignment1_Login",
+        "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login.csproj",
+        "packagesPath": "C:\\Users\\STUDENT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\STUDENT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\Login.Application.csproj": {
+                "projectPath": "C:\\Users\\STUDENT\\Documents\\Midterm_Assignment1_Login\\Midterm_Assignment1_Login\\Login.Application\\Login.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -77,7 +265,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

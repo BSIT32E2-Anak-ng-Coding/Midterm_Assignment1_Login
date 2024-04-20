@@ -19,7 +19,7 @@ namespace Midterm_Assignment1_Login.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(RegisterViewModel model)
+        public ActionResult Register(Models.RegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -46,14 +46,14 @@ namespace Midterm_Assignment1_Login.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(LoginViewModel model)
+        public ActionResult Login(Models.LoginViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            bool success = _authService.Login(model.Username, model.Password, out User user);
+            bool success = _authService.Login(model.Username, model.Password, out Domain.User user);
             if (success)
             {
                 // Redirect to dashboard or home page
